@@ -37,9 +37,9 @@
         <div class="lg:flex-1">
             <h2 class="text-center lg:text-left text-[2rem] font-medium">Kitchenware</h2>
             <!-- First Card Section-->
-            <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 mb-11">
+            <div  class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 mb-11">
                 <!--First product   -->
-                <div class="card bg-base-100 shadow-xl">
+                <div id="wooden_spoon" class="card bg-base-100 shadow-xl">
                     <div class=" rounded-lg mx-auto mt-5 ">
                       <img class="bg-[#1111110D]  px-12 rounded-lg "
                         src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
@@ -52,13 +52,13 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">K. Accessories</h2>
-                      <p class="text-[#11111180]">39.00 TK</p>
+                      <h2 class="card-title">Wooden Spoon</h2>
+                      <p class="text-[#11111180]"><span id="spoonPrice">39.00</span> TK</p>
                       
                       </div>
                     </div>
                     <!-- Second Product -->
-                    <div class="card bg-base-100 shadow-xl bg-[#FFF]">
+                    <div id="access" class="card bg-base-100 shadow-xl bg-[#FFF]">
                         <div class="mx-auto mt-5 ">
                           <img class="bg-[#1111110D] rounded-lg px-9  "
                             src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
@@ -72,12 +72,12 @@
                           </div>
                         <div class="card-body items-center text-center">
                           <h2 class="card-title">K. Accessories</h2>
-                          <p class="text-[#11111180]">25.00 TK</p>
+                          <p class="text-[#11111180]"><span id="accessPrice">25.00</span> TK</p>
                           
                           </div>
                         </div>
                         <!-- Third Product -->
-                        <div class="card bg-base-100 shadow-xl bg-[#FFF]">
+                        <div id="home_cooker" class="card bg-base-100 shadow-xl bg-[#FFF]">
                             <div class="mx-auto mt-5 ">
                               <img class="bg-[#1111110D] rounded-lg px-8  "
                                 src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
@@ -91,7 +91,7 @@
                               </div>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title">Home Cooker</h2>
-                              <p class="text-[#11111180]">49.00 TK</p>
+                              <p class="text-[#11111180]"><span id="cookerPrice">49.00</span> TK</p>
                               
                               </div>
                             </div>    
@@ -101,10 +101,10 @@
              <!-- Second Card Section-->
              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                  <!--First product   -->
-                 <div class="card bg-base-100 shadow-xl">
+                 <div id="black_cap" class="card bg-base-100 shadow-xl">
                      <div class=" rounded-lg mx-auto mt-5 ">
                        <img class="bg-[#1111110D]  px-11 rounded-lg "
-                         src="./images/prod1.png" alt="Shoes"  />
+                         src="./images/prod4.png" alt="Shoes"  />
                      </div>
                      <div class="rating mx-auto mt-3">
                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -114,13 +114,13 @@
                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                        </div>
                      <div class="card-body items-center text-center">
-                       <h2 class="card-title">Sports Back Cap</h2>
-                       <p class="text-[#11111180]">49.00 TK</p>
+                       <h2 class="card-title">Sports Black Cap</h2>
+                       <p class="text-[#11111180]"><span id="capPrice">49.00</span> TK</p>
                        
                        </div>
                      </div>
                      <!-- Second Product -->
-                     <div class="card bg-base-100 shadow-xl bg-[#FFF]">
+                     <div id="jersey" class="card bg-base-100 shadow-xl bg-[#FFF]">
                          <div class="mx-auto mt-5 ">
                            <img class="bg-[#1111110D] rounded-lg px-10 "
                              src="./images/prod5.png" alt="Shoes"  />
@@ -133,13 +133,13 @@
                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                            </div>
                          <div class="card-body items-center text-center">
-                           <h2 class="card-title">K. Accessories</h2>
-                           <p class="text-[#11111180]">69.00 TK</p>
+                           <h2 class="card-title">Jersey</h2>
+                           <p class="text-[#11111180]"><span id="jerseyPrice">69.00</span> TK</p>
                            
                            </div>
                          </div>
                          <!-- Third Product -->
-                         <div class="card bg-base-100 shadow-xl bg-[#FFF]">
+                         <div id="cates" class="card bg-base-100 shadow-xl bg-[#FFF]">
                              <div class="mx-auto mt-5 ">
                                <img class="bg-[#1111110D] rounded-lg px-7  "
                                  src="./images/prod6.png" alt="Shoes"  />
@@ -153,7 +153,7 @@
                                </div>
                              <div class="card-body items-center text-center">
                                <h2 class="card-title">Sports Cates</h2>
-                               <p class="text-[#11111180]">159.00 TK</p>
+                               <p class="text-[#11111180]"><span id="catesPrice">159.00</span> TK</p>
                                
                                </div>
                              </div>    
@@ -166,27 +166,42 @@
        <div class="flex lg:w-[25%] flex-col gap-7  lg:h-96 mt-12 ">
          <div class="text-center lg:text-left bg-[#FFFFFF] rounded-lg mb-5 p-3  ">
             <h3 class=" text-lg font-medium mb-2">Have coupon?</h3>
-            <input class="border-[1px] rounded-l-xl w-28 h-11  " type="text" placeholder="Coupon Code">
-            <button class="bg-[#E527B2] text-white w-20 h-11 rounded-r-xl text-lg font-medium ml-[-6px]">Apply</button>
+            <input id="couponCode" class="border-[1px] rounded-l-xl w-28 h-11  " type="text" placeholder="Coupon Code">
+            <button id="apply_btn" class="bg-[#E527B2] text-white w-20 h-11 rounded-r-xl text-lg font-medium ml-[-6px] disabled:opacity-50 " disabled>Apply</button>
          </div>
          <!-- ... -->
          <div class="bg-[#FFFFFF] rounded-lg pl-3">
-            <div class="mt-4">
+            <div id="choosenProductList" class="mt-4">
 
             </div>
             <div class="border-b-2 w-[80%] border-gray-300 my-5"></div>
              <div class="my-2 ">
-                <h3 class="text-lg font-medium">Total Price: <span class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></h3>
-                <h3 class="text-lg font-medium">Discount: <span class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></h3>
-                <h3 class="text-lg font-medium">Total: <span class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></h3>
+                <h3 class="text-lg font-medium">Total Price: <span id="totalPrice" class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></h3>
+                <h3  class="text-lg font-medium">Discount: <span id="discount" class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></h3>
+                <h3 class="text-lg font-medium">Total: <span id="finalTotal" class="text-gray-400">0.00</span><span class="text-gray-400">TK</span></h3>
              </div>
              <div class="w-[80%] border-b-2 border-gray-300 mt-4"></div>
-             <div class="relative top-4 left-5"><button class="bg-[#E527B2] text-white text-lg h-10 rounded-lg font-medium w-[80%] mx-auto">Make Purchase</button></div>
-         </div>
+             <div class="relative top-4 left-5"><button id="purchase_btn"  class="bg-[#E527B2] text-white text-lg h-10 rounded-lg font-medium w-[80%] mx-auto disabled:opacity-50 " disabled>Make Purchase</button></div>
 
          </div>
+         <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box text-center">
+            <img class="mx-auto" src="./images/congo.png" alt="">
+              <h3 class="font-bold text-xl">Congratulations</h3>
+              <p class="py-4 text-[#11111180]">You purchase the product succesfully.</p>
+              <div class="modal-action ">
+                  <button class="btn mx-auto bg-[#E527B2] text-white font-medium" onclick="closePurchaseModal()">Go Home </button>
+              </div>
+          </form>
+      </dialog>
+         </div>
+         
         
         </section>
-    </main>   
+    </main>
+    <script src="./function.js"></script> 
+    <script src="./main.js"></script> 
+    <script src="./coupon.js"></script>
+    <script src="./purchase.js"></script>
 </body>
 </html>
