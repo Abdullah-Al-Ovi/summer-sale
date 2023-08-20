@@ -5,6 +5,9 @@ document.getElementById('purchase_btn').addEventListener("click",function(){
 })
 
 function closePurchaseModal(){
-    window.location.href = "http://127.0.0.1:5500/index.html"
+    
+    document.getElementById('totalPrice').innerText = '0.00'
+    document.getElementById('discount').innerText = '0.00'
+    document.getElementById('finalTotal').innerText = '0.00'
 }
     

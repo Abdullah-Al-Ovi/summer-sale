@@ -13,9 +13,6 @@ document.getElementById('wooden_spoon').addEventListener("click",function(){
     updatePurchaseButton();
     updateCouponButton();
 
-
-
-
 })
 // ...
 document.getElementById('access').addEventListener("click",function(){

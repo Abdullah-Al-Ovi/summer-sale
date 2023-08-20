@@ -17,5 +17,4 @@ document.getElementById('apply_btn').addEventListener("click",function(){
 
     }
 
-    
 })
