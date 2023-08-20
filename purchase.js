@@ -10,5 +10,7 @@ function closePurchaseModal(){
     document.getElementById('discount').innerText = '0.00'
     document.getElementById('finalTotal').innerText = '0.00'
     document.getElementById('choosenProductList').innerText = ''
+    document.getElementById('purchase_btn').setAttribute("disabled",true)
+    document.getElementById('apply_btn').setAttribute("disabled",true)
 }
     
