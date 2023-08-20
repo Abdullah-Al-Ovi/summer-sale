@@ -9,5 +9,6 @@ function closePurchaseModal(){
     document.getElementById('totalPrice').innerText = '0.00'
     document.getElementById('discount').innerText = '0.00'
     document.getElementById('finalTotal').innerText = '0.00'
+    document.getElementById('choosenProductList').innerText = ''
 }
     
